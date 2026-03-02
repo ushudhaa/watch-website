@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watch Store By TimeLess</title>
+    <!-- Internal CSS -->
+    <style type="text/css">  
+      /* Applying default font style */
+      * {
+        font-family: "Poppins", serif;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all .2s linear;
+        background: none;
+        
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Link to your external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="CSS/headerFooter.css">
+  <link rel="stylesheet" href="CSS/research.css">
+</head>
+<body style="background: rgb(255, 255, 255);"> <!-- Inline CSS -->
+
+<!-- Header Section -->
+<header class="header">
+    <!-- Title Section -->
+    <div class="title">
+      <a href="home.html" style="font-size: 1.875rem; color: royalblue; text-decoration: none;">
+          <b>TimeLess</b>
+      </a>
+  </div>
+
+  <nav class="nav-items">
+      <a href="home.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="home.html#category">Products</a>
+      <a href="research.html">Research</a>
+      <a href="About Us.html">About Us</a>
+  </nav>
+
+    <!-- Icons Section -->
+  <div class="icons">
+    <div class="fa fa-search" id="search-button"></div>
+    <div class="fa fa-shopping-cart" id="cart-button"></div>
+    <div class="fa fa-user" id="login-button"></div>
+  </div>  
+
+    <!-- Search Modal -->
+  <form class="search-form">
+    <input type="search" id="search-box" placeholder="Search for product or brand">
+    <label for="search-box" class="fa fa-search"></label>
+  </form>
+
+    <!-- Login Modal -->
+  <form action="#" class="login-form" onsubmit="handleLogin(event)">
+    <h3>LOGIN NOW</h3>
+    <input type="email" placeholder="Enter your email" class="box">
+    <input type="password" placeholder="Enter your password" class="box">
+    <p>Forget your password? <a href="#">Click Here</a></p>
+    <p>Don't have an account? <a href="#">Create Now</a></p>
+    <input type="submit" value="Login Now" class="button">
+  </form>
+</header>
+
+
+<!--Research Section-->
+<section class="Topic">
+  <h1>Comparative Analysis of Watch E-Commerce Websites</h1>
+  <p>In this section, we analyze and compare five watch e-commerce websites: Chrono24, Hodinkee, Omega, Helios and Rolex with our website "TimeLess". The analysis is done on the basis of visual design, user interface, user experience, technologies used, navigation structures, and functionalities.</p>
+</section>
+
+<!--Screenshots-->
+<section id="screenshots">
+  <h2 style="padding-bottom: 2rem;">Screenshots of Referenced Websites</h2> <!--inline css-->
+  <div class="screenshot-gallery">
+    <div class="screenshot-item">
+      <img src="/Referenced Websites/Chrono 24.png" alt="Chrono24 Screenshot" width="300">
+      <p>Chrono24</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="/Referenced Websites/Hodinkee.png" alt="Hodinkee Screenshot" width="300">
+      <p>Hodinkee</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="/Referenced Websites/Omega.png" alt="Omega Screenshot" width="300">
+      <p>Omega</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="/Referenced Websites/Helios.png" alt="Helios Screenshot" width="300">
+      <p>Helios</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="/Referenced Websites/Rolex.png" alt="Rolex Screenshot" width="300">
+      <p>Rolex</p>
+    </div>
+  </div>
+</section>
+
+<!--Table Section-->
+<section id="comparison-table">
+  <h2 style="font-size: 1.9rem; text-align: center;">Comparison Table</h2> <!--inline css-->
+  <table border="1">
+      <thead>
+          <tr>
+              <th>Website Name</th>
+              <th>Visual Design</th>
+              <th>User Interface</th>
+              <th>User Experience</th>
+              <th>Technologies Used</th>
+              <th>Navigation Structure</th>
+              <th>Features & Functionality</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Chrono24</td>
+              <td>Clean and Modern with high-quality images</td>
+              <td>Easy to use layout with clear call-to-actions</td>
+              <td>Smooth navigation and fast loading time</td>
+              <td>HTML, CSS and JavaScript and flexible frameworks</td>
+              <td>Simple and organized categories</td>
+              <td>Search, customer reviews and secure payment</td>
+          </tr>
+          <tr>
+              <td>Hodinkee</td>
+              <td>Minimalistic and Modern</td>
+              <td>Clean, well-organized and user-friendly layout</td>
+              <td>Smooth surfing and flexible design</td>
+              <td>HTML, CSS and JavaScript</td>
+              <td>Organized into categories like "What's New", "Stories", "Videos", "Brands", "Insurance" and "Shop"</td>
+              <td>Videos, shopping section and brand search</td>
+          </tr>
+          <tr>
+              <td>Omega</td>
+              <td>Luxurious and Elegant</td>
+              <td>Elegant but complex</td>
+              <td>Smooth and Engaging</td>
+              <td>HTML, CSS, JavaScript and flexible frameworks</td>
+              <td>Organized categories with clear sections</td>
+              <td>Product customization and secure payments</td>
+          </tr>
+          <tr>
+              <td>Helios</td>
+              <td>Clean, Modern and Minimalistic</td>
+              <td>Easy-to-use interface with clear icons</td>
+              <td>Fast and smooth navigation</td>
+              <td>HTML, CSS and JavaScript</td>
+              <td>Navigation at bottom with links to "Home", "Store", "Brands" and "Reach Us</td>
+              <td>Quick add-to-cart, watch collections and customer support</td>
+          </tr>
+          <tr>
+              <td>Rolex</td>
+              <td>Elegant and Luxurious</td>
+              <td>Sleek and modern interface</td>
+              <td>Responsive design and smooth experience</td>
+              <td>HTML, CSS and JavaScript</td>
+              <td>Well-organized with clear sections</td>
+              <td>Secure shopping, online appointment booking and live chat</td>
+          </tr>
+          <tr>
+            <td>TimeLess</td>
+            <td>Custom design with modern look</td>
+            <td>Simple and smooth layout</td>
+            <td>Smooth loading, user-friendly interface</td>
+            <td>HTML, CSS, JavaScript and Balsamiq</td>
+            <td>Horizontal navigation bar and search feature</td>
+            <td>Watch collections, secure login, customer reviews and secure shopping</td>
+        </tr>
+      </tbody>
+  </table>
+</section>
+
+
+<!--Detailed Analysis of referenced websites-->
+<section id="detailed-analysis">
+  <h2>Detailed Analysis</h2>
+
+  <div class="analysis-box">
+    <h3>Visual Design</h3>
+    <p>Chrono 24 has a clean and modern design with high-quality images. Hodinkee offers a modern and minimalistic design. Omega's design is luxurious and elegant. Helios features clean, modern and minimalistic design. In fact, Helios combines the design of Chrono 22 and Hodinkee. Rolex has an elegant and luxurious design. TimeLess offers custom design with a modern look.</p>
+  </div>
+
+  <div class="analysis-box">
+    <h3>User Interface</h3>
+    <p>Chrono24 offers an easy-to-use layout with clear call-to-actions. Hodinkee features a clean, well-organized and user-friendly layout. Omega provides an elegant but complex user interface. Helios uses an easy-to-use interface with clear icons. Rolex presents a sleek and modern interface. TimeLess has a simple and smooth layout.</p>
+  </div>
+
+  <div class="analysis-box">
+    <h3>User Experience</h3>
+    <p>Chrono24 offers smooth navigation and fast loading time. Hodinkee provides smooth surfing and a flexible design. Omega delivers a smooth and engaging experience. Helios ensures fast and smooth navigation. Rolex features a responsive design and a smooth experience. TimeLess offers smooth loading and a user-friendly interface.</p>
+  </div>
+
+  <div class="analysis-box">
+    <h3>Technologies Used</h3>
+    <p>Hodinkee, Helios and Rolex use HTML, CSS and JavaScript. Chrono24, Omega and TimeLess use HTML, CSS, JavaScript and flexible frameworks, with TimeLess also using Balsamiq.</p>
+  </div>
+
+  <div class="analysis-box">
+    <h3>Navigation Structure</h3>
+    <p>Chrono24 features simple and organized categories. Hodinkee organizes its content into categories like "What's New", "Stories", "Videos", "Brands", "Insurance" and "Shop". Omega provides clear sections within its organized categories. Helios places navigation links at the bottom, including "Home", "Store", "Brands" and "Reach Us". Rolex offers a well-organized structure with clear sections. TimeLess uses a horizontal navigation bar with a search feature.</p>
+  </div>
+
+  <div class="analysis-box">
+    <h3>Features & Functionality</h3>
+    <p>Chrono24 offers features like search, customer reviews and secure payment options. Hodinkee includes videos, a shopping section and brand search. Omega provides product customization and secure payments. Helios offers quick add-to-cart, watch collections and customer support. Rolex enables secure shopping, online appointment booking and live chat. TimeLess features watch collections, secure login, customer reviews and secure shopping.</p>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Footer Navigation -->
+    <div class="footer-container">
+        
+        <!-- Navigation Links -->
+        <div class="footer-section">
+            <h3>Navigation Links</h3>
+            <a href="home.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="home.html#category">Products</a>
+            <a href="research.html">Research</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Phone: 977 9800000000</p>
+            <p>Email: timeless08@gmail.com</p>
+            <p>Address: Sundar Haraincha-4</p>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" class="social-icon fa fa-facebook"></a>
+            <a href="https://x.com/?lang=en" class="social-icon fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="social-icon fa fa-linkedin"></a>
+        </div>
+    </div>
+  
+    <!-- Copyright Information -->
+    <p class="footer-copy">&copy; 2025 | TimeLess | All Rights Reserved</p>
+  </footer>
+  
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

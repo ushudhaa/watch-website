@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watch Store By TimeLess</title>
+    <!--Internal css-->
+    <style type="text/css">  
+    /*Applying default font style */
+  *
+  {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .2s linear;
+  background: white;
+  }
+    </style>
+
+    <!-- Code for font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Code for linking css file -->
+    <link rel="stylesheet" type="text/css"  href="CSS/About Us.css"> 
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+
+    <div class="title">
+        <a href="home.html" style="font-size: 1.875rem; color: royalblue; text-decoration: none;">
+            <b>TimeLess</b>
+        </a>
+    </div>
+
+    <nav class="nav-items">
+        <a href="home.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="home.html#category">Products</a>
+        <a href="research.html">Research</a>
+        <a href="About Us.html">About Us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-search" id="search-button"></div>
+        <div class="fa fa-shopping-cart" id="cart-button"></div>
+        <div class="fa fa-user" id="login-button"></div>
+    </div>  
+    
+    <!-- Search Modal -->
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search for product or brand">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <!-- Login Modal -->
+    <form action="#" class="login-form" onsubmit="handleLogin(event)">
+        <h3>LOGIN NOW</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <p>Forget your password? <a href="#">Click Here</a></p>
+        <p>Don't have an account? <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="button">
+    </form>
+</header>
+
+<!-- About Us Section -->
+<div class="container">
+  <section id="company-info">
+    <h1 style="font-size: 2.5rem;">About Us</h1> <!--Inline css-->
+    <p>We are a group of first-year students pursuing our Bachelor's degree in BSc(Hons) Computing at Itahari International College. Our mission is to gain valuable experience and practical knowledge by creating original projects that truly meet the needs of everyday users.</p>
+  </section>
+
+  <section id="mission-vision">
+    <h2 style="font-size: 2rem;">Mission and Vision</h2> <!--Inline css-->
+    <p><strong>Mission:</strong> To create practical and user-friendly websites while developing our technical skills and learning more about the web development process.</p>
+    <p><strong>Vision:</strong> To become skilled web developers and take part in the IT industry by creating effective and useful solutions.</p>
+  </section>
+
+  <section class="team-section">
+    <h2 style="font-size: 2rem;">Our Team</h2> <!--Inline css-->
+    <div class="team-members">
+        <div class="member-card" data-member="sadikshya">
+            <img src="/Image/Sadikshya's Image.jpg " alt="Sadikshya Karki">
+            <h3>Sadikshya Karki</h3>
+            <button class="btn" onclick="showPortfolio('sadikshya')">View Portfolio</button>
+        </div>
+        <div class="member-card" data-member="ushudha">
+            <img src="/Image/Ushudha's Image.jpg" alt="Ushudha Limbu">
+            <h3>Ushudha Limbu</h3>
+            <button class="btn" onclick="showPortfolio('ushudha')">View Portfolio</button>
+        </div>
+        <div class="member-card" data-member="reason">
+            <img src="/Image/Reason's Image.jpg" alt="Reason Subedi">
+            <h3>Reason Subedi</h3>
+            <button class="btn" onclick="showPortfolio('reason')">View Portfolio</button>
+        </div>
+        <div class="member-card" data-member="sujal">
+            <img src="/Image/Sujal's Image.jpg" alt="Sujal Rai">
+            <h3>Sujal Rai</h3>
+            <button class="btn" onclick="showPortfolio('sujal')">View Portfolio</button>
+        </div>
+    </div>
+</section>
+<div id="portfolio-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div id="portfolio-details"></div>
+    </div>
+</div>
+
+<section id="feedback-form">
+  <h2 style="font-size: 2rem;">Feedback Form</h2> <!--Inline css-->
+  <form id="feedbackForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div id="confirmationMessage">Thank you for your feedback!</div>
+</section>
+</div>
+
+
+
+ <!--Internal JS-->
+ <script>
+  // For Portfolio
+  const portfolios = {
+        sadikshya: {
+            name: "Sadikshya Karki",
+            role: "Front-End Developer",
+            responsibilities: "Creating the home and about us page, making sure they look great and work smoothly.",
+            contribution: "Designed and developed the Home and About Us page.",
+            skills: "HTML, CSS, JavaScript and Wireframing",
+            contact: "sadikshyakarki42@gmail.com"
+        },
+        ushudha: {
+            name: "Ushudha Limbu",
+            role: "Content Researcher and Web Developer",
+            responsibilities: "Doing the research and building a solid foundation for the research page.",
+            contribution: "Worked on the Research page.",
+            skills: "Content Research, HTML and CSS",
+            contact: "lnuma430@gmail.com"
+        },
+        reason: {
+            name: "Reason Subedi",
+            role: "Product Specialist and Web Developer",
+            responsibilities: "Building the product page, making sure it looks good and functions properly.",
+            contribution: "Developed the Product Page.",
+            skills: "Product Analysis, HTML, CSS and JavaScript",
+            contact: "subreason3@gmail.com"
+        },
+        sujal: {
+            name: "Sujal Rai",
+            role: "Web Developer",
+            responsibilities: "Designing the blog page and making sure it is easy to navigate and visually appealing.",
+            contribution: "Created the Blog Page.",
+            skills: "Content creation, HTML and CSS",
+            contact: "hydrasujal24@gmail.com"
+        }
+    };
+
+    function showPortfolio(memberKey) {
+        const portfolio = portfolios[memberKey];
+        const portfolioDetails = `
+            <h2>${portfolio.name}</h2>
+            <p><strong>Role:</strong> ${portfolio.role}</p>
+            <p><strong>Responsibilities:</strong> ${portfolio.responsibilities}</p>
+            <p><strong>Contribution:</strong> ${portfolio.contribution}</p>
+            <p><strong>Skills:</strong> ${portfolio.skills}</p>
+            <p><strong>Contact:</strong> ${portfolio.contact}</p>
+        `;
+        document.getElementById("portfolio-details").innerHTML = portfolioDetails;
+        document.getElementById("portfolio-modal").style.display = "flex";
+    }
+
+    function closeModal() {
+        document.getElementById("portfolio-modal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById("portfolio-modal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+  // For Feedback Form
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // JavaScript validation
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let subject = document.getElementById('subject').value;
+      let message = document.getElementById('message').value;
+      
+      if (name && email && subject && message) {
+        document.getElementById('confirmationMessage').style.display = 'block';
+      } else {
+        alert("Please fill out all fields.");
+      }
+    });
+  </script>
+
+
+  
+
+ <!-- Footer Section -->
+ <footer class="footer">
+    <!-- Footer Navigation -->
+    <div class="footer-container">
+        
+        <!-- Navigation Links -->
+        <div class="footer-section">
+            <h3>Navigation Links</h3>
+            <a href="home.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="home.html#category">Products</a>
+            <a href="research.html">Research</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Phone: 977 9800000000</p>
+            <p>Email: timeless08@gmail.com</p>
+            <p>Address: Sundar Haraincha-4</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" class="social-icon fa fa-facebook"></a>
+            <a href="https://x.com/?lang=en" class="social-icon fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="social-icon fa fa-linkedin"></a>
+        </div>
+    </div>
+
+    <!-- Copyright Information -->
+    <p class="footer-copy">&copy; 2025 | TimeLess | All Rights Reserved</p>
+ </footer>
+
+
+    <!--Internal JS-->
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // JavaScript validation
+          let name = document.getElementById('name').value;
+          let email = document.getElementById('email').value;
+          let subject = document.getElementById('subject').value;
+          let message = document.getElementById('message').value;
+          
+          if (name && email && subject && message) {
+            document.getElementById('confirmationMessage').style.display = 'block';
+          } else {
+            alert("Please fill out all fields.");
+          }
+        });
+      </script>
+    
+
+<!-- Code for linking js file -->
+<script src="JS/script.js"></script>
+
+</body>
+</html>

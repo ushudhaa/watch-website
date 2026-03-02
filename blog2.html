@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watch Store By TimeLess</title>
+    <!--Internal css-->
+    <style type="text/css">  
+    /*Applying default font style */
+  *
+  {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .2s linear;
+  background: white;
+  }
+    </style>
+
+    <!-- Code for font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Code for linking css file -->
+     
+    <link rel="stylesheet" href="CSS/blog-content.css">
+    <link rel="stylesheet" type="text/css" href="CSS/headerFooter.css">
+</head>
+
+<body>
+  
+<!-- Header Section -->
+<header class="header">
+
+    <div class="title">
+        <a href="home.html" style="font-size: 1.875rem; color: royalblue; text-decoration: none;">
+            <b>TimeLess</b>
+        </a>
+    </div>
+
+    <nav class="nav-items">
+        <a href="home.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="home.html#category">Products</a>
+        <a href="research.html">Research</a>
+        <a href="About Us.html">About Us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-search" id="search-button"></div>
+        <div class="fa fa-shopping-cart" id="cart-button"></div>
+        <div class="fa fa-user" id="login-button"></div>
+    </div>  
+    
+    <!-- Search Modal -->
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search for product or brand">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <!-- Login Modal -->
+    <form action="#" class="login-form" onsubmit="handleLogin(event)">
+        <h3>LOGIN NOW</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <p>Forget your password? <a href="#">Click Here</a></p>
+        <p>Don't have an account? <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="button">
+    </form>
+</header>
+
+<!--blog-content-->
+<div class="container">
+  <img src="blogImg/blog2.jpg" alt="Blog Image" class="blog-image">
+  <div class="blog-title">Positive Impact of Technology in the Watch Industry</div>
+  <div class="blog-meta">10 July 2024  |  Purna Rai</div>
+  <div class="blog-content">
+      
+    <p> 
+        Technology has greatly improved the watch industry in many ways.
+        One of the biggest changes is the rise of smartwatches, which do much more than tell time.
+        They track health data like heart rate and sleep patterns, send notifications and allow users to make calls or send messages, all from their wrist. This makes smartwatches convenient and helpful for staying connected and managing health.        
+        <br><br>
+        Technology has also led to the use of new materials like titanium and ceramic, making watches lighter, stronger and more durable. Advances in manufacturing, such as automation and 3D printing, have improved production efficiency, allowing for better quality and quicker turnaround.
+        <br><br>
+        Technology has made watches more affordable, appealing to a wider audience. Smartwatches attract younger buyers and solar-powered watches offer eco-friendly options. It has also improved quality and added new features that customers enjoy.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <!-- Footer Navigation -->
+  <div class="footer-container">
+      
+      <!-- Navigation Links -->
+      <div class="footer-section">
+          <h3>Navigation Links</h3>
+          <a href="home.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="home.html#category">Products</a>
+          <a href="research.html">Research</a>
+          <a href="About Us.html">About Us</a>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Phone: 977 9800000000</p>
+          <p>Email: timeless08@gmail.com</p>
+          <p>Address: Sundar Haraincha-4</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/" class="social-icon fa fa-facebook"></a>
+          <a href="https://x.com/?lang=en" class="social-icon fa fa-twitter"></a>
+          <a href="https://www.instagram.com/" class="social-icon fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/" class="social-icon fa fa-linkedin"></a>
+      </div>
+  </div>
+  <script src="JS/script.js"></script>
+</body>
+</html>

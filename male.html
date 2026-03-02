@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Watch Store By TimeLess</title>
+    <!-- Internal CSS -->
+    <style type="text/css">  
+      /* Applying default font style */
+      * {
+        font-family: "Poppins", serif;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all .2s linear;
+        background: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Link to your external stylesheet -->
+	
+  <link rel="stylesheet" href="CSS/products.css">
+  <link rel="stylesheet" href="CSS/headerFooter.css">
+</head>
+<body style="background: rgb(0, 0, 0);"> <!-- Inline CSS -->
+
+<!-- Header Section -->
+<header class="header">
+    <!-- Title Section -->
+	<div class="title">
+        <a href="home.html" style="font-size: 1.875rem; color: royalblue; text-decoration: none;">
+            <b>TimeLess</b>
+        </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-items">
+		<a href="home.html">Home</a>
+		<a href="blog.html">Blog</a>
+		<a href="home.html#category">Products</a>
+		<a href="research.html">Research</a>
+		<a href="About Us.html">About Us</a>
+	</nav>
+
+    <!-- Icons Section -->
+	<div class="icons">
+		<div class="fa fa-search" id="search-button"></div>
+		<div class="fa fa-shopping-cart" id="cart-button">
+      <span id="cart-count" style="position: absolute;">0</span>
+    </div>
+		<div class="fa fa-user" id="login-button"></div>
+	</div>	
+
+    <!-- Search Modal -->
+	<form class="search-form">
+		<input type="search" id="search-box" placeholder="Search for product or brand">
+		<label for="search-box" class="fa fa-search"></label>
+	</form>
+
+    <!-- Login Modal -->
+	<form action="#" class="login-form" onsubmit="handleLogin(event)">
+		<h3>LOGIN NOW</h3>
+		<input type="email" placeholder="Enter your email" class="box">
+		<input type="password" placeholder="Enter your password" class="box">
+		<p>Forget your password? <a href="#">Click Here</a></p>
+		<p>Don't have an account? <a href="#">Create Now</a></p>
+		<input type="submit" value="Login Now" class="button">
+	</form>
+</header>
+
+
+<!--Grid Item Section-->
+<h1 class="Grid-heading" >Our Best Selling</h1>
+  <div class="grid">
+    <div class="grid-item">
+      <img src="watches/male Ethereal.png" alt="mainGrid img 1" class="item-img">
+
+    <div class="description"> 
+     <span class="item-name" >Ethereal </span>
+     <div class="price-container">
+      <span class="discounted-price">$2139</span>
+     <span class="price" >$2399 </span>
+    </div>
+     <span class="cart-span">
+      <button class="cart-front">
+        <img src="icons/cart.png" alt="Add to Cart" >
+      </button>
+    </span>
+    </div>
+    </div>
+
+    <div class="grid-item" >
+      <img src="watches/male Domin.png" alt="mainGrid img 2" class="item-img">
+      
+      <div class="description"> 
+      <span class="item-name">Domin </span> 
+      <div class="price-container">
+        <span class="discounted-price">$2039</span>
+        <span class="price" >$2699 </span>
+       </div>
+      <span class="cart-span">
+        <button class="cart-front">
+          <img src="icons/cart.png" alt="Add to Cart" >
+        </button>
+      </div>
+    </div>
+
+    <div class="grid-item" >
+      <img src="watches/male Boldish.png" alt="mainGrid img 3"  class="item-img">
+
+      <div class="description"> 
+       <span class="item-name">Boldish</span>
+       <div class="price-container">
+        <span class="discounted-price">$1899</span>
+        <span class="price" >$1999 </span>
+       </div>
+       <span class="cart-span">
+        <button class="cart-front">
+          <img src="icons/cart.png" alt="Add to Cart" >
+        </button>
+      </div>
+    </div>
+
+    <div class="grid-item" >
+      <img src="watches/male Skibdi.png" alt="mainGrid img 4" class="item-img">
+
+      <div class="description"> 
+         <span class="item-name">Skibdi</span>
+         <div class="price-container">
+          <span class="discounted-price">$2300</span>
+          <span class="price" >$2399 </span>
+         </div>
+         <span class="cart-span">
+          <button class="cart-front">
+            <img src="icons/cart.png" alt="Add to Cart" >
+          </button>
+      </div>
+    </div>
+    
+    </div>
+
+ <!-- New Grid Items Section-->
+<main>
+    <h1 class="Grid-heading">Explore More</h1>
+    <div class=" new-grid">
+      <div class="newGrid-item">
+        <img src="newGridImage/male1.jpg" alt="male watch1" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Sigma</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$1500</span>
+            <span class="newGrid-price">$6999</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+      
+      <div class="newGrid-item">
+        <img src="newGridImage/male2.jpg" alt="male watch2" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Beta</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$4499</span>
+            <span class="newGrid-price">$5699</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male3.jpg" alt="male watch3" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Tiger</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$1499</span>
+            <span class="newGrid-price">$2469</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male4.jpg" alt="male watch4" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Baddie Puller</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$4899</span>
+            <span class="newGrid-price">$5679</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male5.jpg" alt="male watch5"  class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">NonChalant</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$1299</span>
+            <span class="newGrid-price">$6288</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male6.jpg" alt="male watch6" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Green Eros</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$2419</span>
+            <span class="newGrid-price">$2669</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male7.jpg" alt="male watch7" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">XoXo</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$1199</span>
+            <span class="newGrid-price">$1299</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male8.jpg" alt="male watch8" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">BabyShark</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$1999</span>
+            <span class="newGrid-price">$2329</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+     <div class="newGrid-item">
+        <img src="newGridImage/male9.jpg" alt="male watch9" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Unique</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$3999</span>
+            <span class="newGrid-price">$4569</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male10.jpg" alt="male watch10" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Sapphire</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$2499</span>
+            <span class="newGrid-price">$3999</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+      <div class="newGrid-item">
+        <img src="newGridImage/male11.jpg" alt="male watch11" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Explorex</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$499</span>
+            <span class="newGrid-price">$599</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="newGrid-item">
+        <img src="newGridImage/male12.jpg" alt="male watch12" class="newGriditem-img">
+        <div class="newGrid-description">
+          <span class="newGrid-item-name">Sammie</span>
+          <div class="new-price-container">
+            <span class="newGrid-discounted-price">$3399</span>
+            <span class="newGrid-price">$3459</span>
+          </div>
+          <span class="NewGrid-cart-span">
+            <button class="newGrid-cart-front">
+              <img src="icons/cart.png" alt="Add to Cart">
+            </button>
+          </span>
+        </div>
+      </div>
+    
+    </div>
+  </main>  
+    
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Footer Navigation -->
+    <div class="footer-container">
+        
+        <!-- Navigation Links -->
+        <div class="footer-section">
+            <h3>Navigation Links</h3>
+            <a href="home.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="home.html#category">Products</a>
+            <a href="research.html">Research</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Phone: 977 9800000000</p>
+            <p>Email: timeless08@gmail.com</p>
+            <p>Address: Sundar Haraincha-4</p>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" class="social-icon fa fa-facebook"></a>
+            <a href="https://x.com/?lang=en" class="social-icon fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="social-icon fa fa-linkedin"></a>
+        </div>
+    </div>
+  
+    <!-- Copyright Information -->
+    <p class="footer-copy">&copy; 2025 | TimeLess | All Rights Reserved</p>
+  </footer>
+  
+
+      <script src="JS/products.js"></script>
+</body>
+</html>
+
+
+
+
+
+

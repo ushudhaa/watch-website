@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+/* Research Section */
+.Topic {
+  text-align: center;
+  padding: 0.625rem 1.25rem; 
+  background-color: white;
+  margin-top: 5rem; 
+}
+
+.Topic h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.Topic p {
+  font-size: 1.1rem;
+  color: black;
+  margin-top: 0.625rem; 
+}
+
+/* Research Container */
+.research-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem; 
+  gap: 1.875rem; 
+  padding: 0 1.25rem; 
+}
+
+/* Screenshots Section */
+#screenshots {
+text-align: center;
+padding: 5rem 10rem; 
+background-color: white;
+}
+
+.screenshot-gallery {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 4rem; 
+}
+.screenshot-gallery img:hover{
+  scale: 1.1;
+}
+
+.screenshot-gallery img {
+width: 20rem; 
+border-radius: 0.625rem; 
+box-shadow: 0rem 0.18rem 0.18rem gray; 
+}
+
+
+
+/* Comparison Table */
+#comparison-table {
+  margin: 3.125rem auto; 
+  width: 80%;
+  overflow-x: auto;
+}
+
+#comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0; 
+}
+
+#comparison-table th, #comparison-table td {
+  padding: 0.9rem; 
+  text-align: center;
+  border: 0.06rem solid gray; 
+}
+
+#comparison-table th {
+  background-color: royalblue;
+  color: white;
+}
+
+#comparison-table td {
+  background-color: white;
+}
+
+
+/* Detailed Analysis Section */
+#detailed-analysis {
+  padding: 3.125rem 1.25rem; 
+  background-color: white;
+}
+
+#detailed-analysis h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.25rem; 
+  text-align: center;
+}
+.analysis-box {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.3rem 0.3rem gray;
+}
+
+.analysis-box h3 {
+  font-size: 1.3rem;
+  color: black;
+  text-align: left;
+}
+
+.analysis-box p {
+  font-size: 1rem;
+  color: black;
+  text-align: justify;
+}
+
